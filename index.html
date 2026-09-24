@@ -31,7 +31,7 @@
   <div class="screen" id="finalScreen"><div class="final-icon">💖</div><h2>Отличный <span class="pink-text">выбор!</span></h2><p class="intro">Будем ждать тебя и уже предвкушать этот вкусный момент.</p><div class="final-box" id="finalResult"></div><div class="actions"><button class="btn ghost" id="restartButton">Выбрать заново</button></div><p class="footer-note">Заявка отправлена на почту 💌</p></div>
 </section></div></main>
 <script>
-const EMAIL="rabochyapochta@mail.ru";
+const EMAIL="rabochyapochhta@mail.ru";
 const screens=document.querySelectorAll('.screen');const yesButton=document.getElementById('yesButton');const thinkButton=document.getElementById('thinkButton');const foods=document.querySelectorAll('.food');const foodNext=document.getElementById('foodNext');const dateTime=document.getElementById('dateTime');const finish=document.getElementById('finishButton');const timeError=document.getElementById('timeError');const selectedText=document.getElementById('selectedFoodText');const finalResult=document.getElementById('finalResult');let selectedFood='';
 function show(id){screens.forEach(s=>s.classList.toggle('active',s.id===id));window.scrollTo({top:0,behavior:'smooth'})}
 const now=new Date();now.setMinutes(now.getMinutes()-now.getTimezoneOffset());dateTime.min=now.toISOString().slice(0,16);
